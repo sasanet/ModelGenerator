@@ -1,11 +1,11 @@
 {
-    "name": "sasanet/ModelGenerator",
-    "description": "Reliese Components for Laravel Framework code generation.",
-    "keywords": ["sasanet", "ModelGenerator"],
+    "name": "sasanet/laravel-model-generator",
+    "description": "Fork of Reliese Components for Laravel Framework code generation.",
+    "keywords": ["sasanet", "laravel-model-generator"],
     "homepage": "http://cristianllanos.com",
     "support": {
-        "issues": "https://github.com/sasanet/ModelGenerator/issues",
-        "source": "https://github.com/sasanet/ModelGenerator"
+        "issues": "https://github.com/sasanet/laravel-model-generator/issues",
+        "source": "https://github.com/sasanet/laravel-model-generator"
     },
     "license": "MIT",
     "authors": [
