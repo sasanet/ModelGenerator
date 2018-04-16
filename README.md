@@ -14,7 +14,7 @@ providing some convenient code-generation capabilities.
 ## How does it work?
 
 This package expects that you are using Laravel 5.1 or above.
-You will need to import the `reliese/laravel` package via composer:
+You will need to import the `sasanet/eloquent-model-generator` package via composer:
 
 ```shell
 composer require sasanet/eloquent-model-generator
