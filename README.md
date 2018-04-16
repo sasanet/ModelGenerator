@@ -117,3 +117,8 @@ to decide whether this approach gives value to your project :-)
 
 This package support MySQL databases. 
 Added support for Sql Server Database.
+
+
+#### Thanks
+
+Special Thanks to "reliese" for project authoring.
