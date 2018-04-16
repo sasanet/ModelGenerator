@@ -1,6 +1,6 @@
 {
     "name": "sasanet/eloquent-model-generator",
-    "description": "Fork of Reliese Components for Laravel Framework eloquent code generation.",
+    "description": "Fork of Reliese Components for Laravel Framework eloquent code generation with sql server.",
     "keywords": ["sasanet", "eloquent-model-generator"],
     "homepage": "http://cristianllanos.com",
     "support": {
