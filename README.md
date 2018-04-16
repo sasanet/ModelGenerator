@@ -115,4 +115,10 @@ to decide whether this approach gives value to your project :-)
 
 #### Support
 
-For the time being, this package only supports MySQL databases. Support for other databases will be added soon.
+This package support MySQL databases. 
+Added support for Sql Server Database.
+
+
+#### Thanks
+
+Special Thanks to "reliese" for project authoring.
