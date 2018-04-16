@@ -12,9 +12,12 @@ use RuntimeException;
 use IteratorAggregate;
 use Illuminate\Database\MySqlConnection;
 use Illuminate\Database\SQLiteConnection;
+use Illuminate\Database\SqlServerConnection;
 use Illuminate\Database\ConnectionInterface;
 use Reliese\Meta\MySql\Schema as MySqlSchema;
 use Reliese\Meta\Sqlite\Schema as SqliteSchema;
+use Reliese\Meta\SqlSrv\Schema as SqlSrvSchema;
+
 
 class SchemaManager implements IteratorAggregate
 {
@@ -24,6 +27,7 @@ class SchemaManager implements IteratorAggregate
     protected static $lookup = [
         MySqlConnection::class => MySqlSchema::class,
         SQLiteConnection::class => SqliteSchema::class,
+        SqlServerConnection::class=>SqlSrvSchema::class,
     ];
 
     /**
