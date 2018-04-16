@@ -1,11 +1,11 @@
 {
-    "name": "reliese/laravel",
+    "name": "sasanet/ModelGenerator",
     "description": "Reliese Components for Laravel Framework code generation.",
-    "keywords": ["reliese", "laravel"],
+    "keywords": ["sasanet", "ModelGenerator"],
     "homepage": "http://cristianllanos.com",
     "support": {
-        "issues": "https://github.com/reliese/laravel/issues",
-        "source": "https://github.com/reliese/laravel"
+        "issues": "https://github.com/sasanet/ModelGenerator/issues",
+        "source": "https://github.com/sasanet/ModelGenerator"
     },
     "license": "MIT",
     "authors": [
