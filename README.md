@@ -17,7 +17,7 @@ This package expects that you are using Laravel 5.1 or above.
 You will need to import the `reliese/laravel` package via composer:
 
 ```shell
-composer require sasanet/laravel-model-generator
+composer require sasanet/eloquent-model-generator
 ```
 
 ### Configuration
