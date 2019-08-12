@@ -13,7 +13,7 @@ providing some convenient code-generation capabilities.
 
 ## How does it work?
 
-This package expects that you are using Laravel 5.1 or above.
+This package expects that you are using Laravel 5.8 or above.
 You will need to import the `sasanet/eloquent-model-generator` package via composer:
 
 ```shell
@@ -84,7 +84,7 @@ php artisan code:models --table=users
 - You can also specify the connection:
 
 ```shell
-php artisan code:models --connection=mysql
+php artisan code:models --connection=sqlsrv
 ```
 
 - If you are using a MySQL database, you can specify which schema you want to scaffold:
