@@ -27,8 +27,8 @@ class Column implements \Reliese\Meta\Column
      * @var array
      */
     public static $mappings = [
-        'string' => ['varchar','char','nvarchar','nchar','string'],
-        'date' => ['datetime', 'datetim2', 'date'],
+        'string' => ['varchar','char','nvarchar','nchar','string','xml'],
+        'date' => ['datetime', 'datetime2', 'date'],
         'int' => ['bigint', 'int', 'tinyint', 'smallint','integer'],
         'float' => ['float', 'decimal','money','smallmoney'],
         'real' =>['real'],
@@ -65,7 +65,7 @@ class Column implements \Reliese\Meta\Column
     protected function parseType(Fluent $attributes)
     {
 
-        
+
         $dataType = $this->metadata->getType()->getName();
 
         foreach (static::$mappings as $phpType => $database) {

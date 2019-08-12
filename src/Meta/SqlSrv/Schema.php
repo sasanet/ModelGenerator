@@ -67,7 +67,9 @@ class Schema implements \Reliese\Meta\Schema
             $blueprint = new Blueprint($this->connection->getName(), $this->schema, $table);
             $this->fillColumns($blueprint);
             $this->fillConstraints($blueprint);
-            $this->tables[$table] = $blueprint;
+            if ($blueprint->primaryKey()){
+                $this->tables[$table] = $blueprint;
+            }
         }
     }
 
@@ -141,13 +143,16 @@ class Schema implements \Reliese\Meta\Schema
     {
         $indexes = $this->manager()->listTableIndexes($blueprint->table());
 
-        $key = [
-            'name' => 'primary',
-            'index' => '',
-            'columns' => $indexes['primary']->getColumns(),
-        ];
+        if (count($indexes)>0){
+            $key = [
+                'name' => 'primary',
+                'index' => '',
+                'columns' => $indexes['primary']->getColumns(),
+            ];
 
-        $blueprint->withPrimaryKey(new Fluent($key));
+            $blueprint->withPrimaryKey(new Fluent($key));
+        }
+
     }
 
     /**
