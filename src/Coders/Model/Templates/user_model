@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Created by Sasanet review of Reliese Model.
+ */
+
+
 namespace {{namespace}};
 
 {{imports}}
