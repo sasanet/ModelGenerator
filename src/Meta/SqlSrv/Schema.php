@@ -44,6 +44,7 @@ class Schema implements \Reliese\Meta\Schema
         $this->connection = $connection;
         /* Sqlite has a bool type that doctrine isn't registering */
         $this->connection->getDoctrineConnection()->getDatabasePlatform()->registerDoctrineTypeMapping('bool', 'boolean');
+        $this->connection->getDoctrineConnection()->getDatabasePlatform()->registerDoctrineTypeMapping('xml', 'string');
         $this->load();
     }
 
