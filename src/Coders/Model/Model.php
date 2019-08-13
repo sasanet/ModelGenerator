@@ -968,7 +968,7 @@ class Model
     {
         return array_diff($this->dates, [$this->CREATED_AT, $this->UPDATED_AT]);
     }
-    
+
 
     /**
      * @return string
