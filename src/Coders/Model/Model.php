@@ -968,21 +968,22 @@ class Model
     {
         return array_diff($this->dates, [$this->CREATED_AT, $this->UPDATED_AT]);
     }
+    
 
     /**
-     * @return bool
+     * @return string
      */
-    public function usesSnakeAttributes()
-    {
-        return (bool) $this->config('snake_attributes', true);
+    public function usesWordStrategyAttributes(){
+        return  $this->config('word_strategy_attributes', "none");
     }
+
 
     /**
      * @return bool
      */
     public function doesNotUseSnakeAttributes()
     {
-        return ! $this->usesSnakeAttributes();
+        return $this->usesWordStrategyAttributes()!=="snake";
     }
 
     /**

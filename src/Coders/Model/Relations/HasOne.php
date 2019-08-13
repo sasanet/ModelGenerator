@@ -24,11 +24,20 @@ class HasOne extends HasOneOrMany
      */
     public function name()
     {
-        if ($this->parent->usesSnakeAttributes()) {
-            return Str::snake($this->related->getClassName());
+
+        switch($this->parent->usesWordStrategyAttributes()){
+            case "snake":{
+                return Str::snake($this->related->getClassName());
+            }
+            case "camel":{
+                return Str::camel($this->related->getClassName());
+            }
+            default:
+            {
+                return $this->related->getClassName();
+            }
         }
 
-        return Str::camel($this->related->getClassName());
     }
 
     /**

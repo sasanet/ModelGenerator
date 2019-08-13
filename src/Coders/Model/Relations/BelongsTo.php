@@ -59,11 +59,21 @@ class BelongsTo implements Relation
                 break;
         }
 
-        if ($this->parent->usesSnakeAttributes()) {
-            return Str::snake($relationName);
+
+
+        switch($this->parent->usesWordStrategyAttributes()){
+            case "snake":{
+                return Str::snake($relationName);
+            }
+            case "camel":{
+                return Str::camel($relationName);
+            }
+            default:
+                {
+                    return $relationName;
+                }
         }
 
-        return Str::camel($relationName);
     }
 
     /**

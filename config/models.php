@@ -174,16 +174,16 @@ return [
 
         /*
         |--------------------------------------------------------------------------
-        | Snake Attributes
+        | Work Strategy Attributes
         |--------------------------------------------------------------------------
         |
         | Eloquent treats your model attributes as snake cased attributes, but
-        | if you have camel-cased fields in your database you can disable
-        | that behaviour and use camel case attributes in your models.
+        | if you have camel-cased fields in your database or nothing case you can disable
+        | that behaviour and use camel case attributes or none in your models.
         |
         */
 
-        'snake_attributes' => true,
+        'word_strategy_attributes' => 'none',
 
         /*
         |--------------------------------------------------------------------------
